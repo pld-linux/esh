@@ -1,8 +1,8 @@
 Summary:	esh, the easy shell
 Summary(pl):	esh, prosta pow³oka
 Name:		esh
-Version:	0.8
-Release:	2
+Version:	0.8.5
+Release:	1
 License:	GPL
 Group:		Applications/Shells
 Vendor:		Ivan Tkatchev <ivantk@yahoo.com>
@@ -54,6 +54,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGELOG CREDITS GC_README INSTALL LICENSE READLNE-HACKS TODO doc/*.html emacs examples
+%doc CHANGELOG CREDITS GC_README INSTALL READLNE-HACKS TODO doc/*.html emacs examples
 %attr(755,root,root) %{_bindir}/esh
 %{_infodir}/esh.info*
