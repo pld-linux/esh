@@ -1,5 +1,5 @@
 Summary:	esh, the easy shell
-Summary(pl):	esh, prosta pow³oka
+Summary(pl):	esh - prosta pow³oka
 Name:		esh
 Version:	0.8.5
 Release:	1
@@ -25,7 +25,7 @@ programmability.
 %description -l pl
 esh zosta³ napisany w pierwszej kolejno¶ci z potrzeby posiadania
 prostej i ma³ej pow³oki uniksowej. Jako taki ró¿ni siê od wszystkich
-innych shelli, przyjmuj±c sk³adniê podobn± do Lisp'a. To pozwala na
+innych pow³ok, przyjmuj±c sk³adniê podobn± do Lispa. To pozwala na
 uzyskaæ wyj±tkowo ma³e rozmiary, w rozmiarach kodu jak i w zu¿yciu
 pamiêci przy zachowaniu du¿ej elastyczno¶ci i programowalno¶ci.
 
