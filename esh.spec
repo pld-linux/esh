@@ -41,8 +41,6 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_infodir}}
 install esh $RPM_BUILD_ROOT%{_bindir}
 install doc/esh.info $RPM_BUILD_ROOT%{_infodir}
 
-gzip -nf9 emacs/* examples/* CHANGELOG CREDITS GC_README INSTALL LICENSE READLNE-HACKS TODO
-
 %post
 [ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir %{_infodir} >/dev/null 2>&1
 
@@ -54,6 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz doc/*.html emacs/*.gz examples/*.gz
+%doc CHANGELOG CREDITS GC_README INSTALL LICENSE READLNE-HACKS TODO doc/*.html emacs examples
 %attr(755,root,root) %{_bindir}/esh
-%{_infodir}/esh.info.gz
+%{_infodir}/esh.info*
