@@ -24,7 +24,7 @@ programmability.
 %setup -q -n esh
 
 %build
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
