@@ -5,8 +5,6 @@ Version:	0.8
 Release:	2
 License:	GPL
 Group:		Applications/Shells
-Group(de):	Applikationen/Shells
-Group(pl):	Aplikacje/Pow³oki
 Vendor:		Ivan Tkatchev <ivantk@yahoo.com>
 Source0:	http://esh.netpedia.net/%{name}-%{version}.tar.gz
 URL:		http://esh.netpedia.net/
