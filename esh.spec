@@ -24,7 +24,7 @@ programmability.
 
 %description -l pl
 esh zosta³ napisany w pierwszej kolejno¶ci z potrzeby posiadania
-prostej i ma³ej pow³oki Unixowej. Jako taki ró¿ni siê od wszystkich
+prostej i ma³ej pow³oki Uniksowej. Jako taki ró¿ni siê od wszystkich
 innych shelli, przyjmuj±c sk³adniê podobn± do Lisp'a. To pozwala na
 uzyskaæ wyj±tkowo ma³e rozmiary, w rozmiarach kodu jak i w zu¿yciu
 pamiêci przy zachowaniu du¿ej elastyczno¶ci i programowalno¶ci.
