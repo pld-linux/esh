@@ -8,7 +8,7 @@ Group:		Applications/Shells
 Vendor:		Ivan Tkatchev <ivantk@yahoo.com>
 #Source0:	http://esh.netpedia.net/%{name}-%{version}.tar.gz
 Source0:	%{name}-%{version}.tar.gz
-# Source0-md5:	b59022b88bae24420156d25869b8be54
+# Source0-md5:	ab8dc77db3eb7aa5b1097336a91cdd39
 #URL:		http://esh.netpedia.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
