@@ -13,11 +13,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_bindir		/bin
 
 %description
-esh was primarily written out of a need for a simple and lightweight shell
-for Unix. As such, it deviates completely from all of the traditional
-shells, opting instead for a Lisp-like syntax. This allows exceptionally
-small size, both in terms of lines of code and memory consumption, while
-retaining remarkable flexibility and programmability.
+esh was primarily written out of a need for a simple and lightweight
+shell for Unix. As such, it deviates completely from all of the
+traditional shells, opting instead for a Lisp-like syntax. This allows
+exceptionally small size, both in terms of lines of code and memory
+consumption, while retaining remarkable flexibility and
+programmability.
 
 %prep
 %setup -q -n esh
@@ -31,15 +32,13 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_infodir}}
 
 install -s esh $RPM_BUILD_ROOT%{_bindir}
-install esh.info $RPM_BUILD_ROOT%{_prefix}/info
+install esh.info $RPM_BUILD_ROOT%{_infodir}
 
 %post
-/sbin/install-info %{_prefix}/info/esh.info.gz %{_prefix}/info/dir --entry="* esh: (esh).                 esh, the easy shell."
+[ -x /usr/sbin/fix-info-dir ] && /usr/sbin/fix-info-dir %{_infodir} >/dev/null 2>&1
 
 %preun
-if [ $1 = 0 ]; then
-	/sbin/install-info --delete %{_prefix}/info/esh.info.gz %{_prefix}/info/dir --entry="* esh: (esh).                 esh, the easy shell."
-fi
+[ -x /usr/sbin/fix-info-dir ] && /usr/sbin/fix-info-dir %{_infodir} >/dev/null 2>&1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -47,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc doc emacs examples CHANGELOG CREDITS GC_README INSTALL LICENSE READLNE-HACKS TODO
-/bin/esh
-%{_prefix}/info/esh.info.gz
+%attr(755,root,root) %{_bindir}/esh
+%{_infodir}/esh.info.gz
