@@ -6,9 +6,10 @@ Release:	2
 License:	GPL
 Group:		Applications/Shells
 Vendor:		Ivan Tkatchev <ivantk@yahoo.com>
-Source0:	http://esh.netpedia.net/%{name}-%{version}.tar.gz
-# Source0-md5:	a5f13d01d6a7a391a136726f3a2c11ff
-URL:		http://esh.netpedia.net/
+#Source0:	http://esh.netpedia.net/%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	b59022b88bae24420156d25869b8be54
+#URL:		http://esh.netpedia.net/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_bindir		/bin
