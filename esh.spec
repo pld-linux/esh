@@ -10,6 +10,7 @@ Vendor:		Ivan Tkatchev <ivantk@yahoo.com>
 Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	ab8dc77db3eb7aa5b1097336a91cdd39
 #URL:		http://esh.netpedia.net/
+BuildRequires:	readline-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_bindir		/bin
