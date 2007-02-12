@@ -1,5 +1,5 @@
 Summary:	esh, the easy shell
-Summary(pl):	esh - prosta pow³oka
+Summary(pl.UTF-8):   esh - prosta powÅ‚oka
 Name:		esh
 Version:	0.8.5
 Release:	1
@@ -23,12 +23,12 @@ exceptionally small size, both in terms of lines of code and memory
 consumption, while retaining remarkable flexibility and
 programmability.
 
-%description -l pl
-esh zosta³ napisany w pierwszej kolejno¶ci z potrzeby posiadania
-prostej i ma³ej pow³oki uniksowej. Jako taki ró¿ni siê od wszystkich
-innych pow³ok, przyjmuj±c sk³adniê podobn± do Lispa. To pozwala na
-uzyskaæ wyj±tkowo ma³e rozmiary, w rozmiarach kodu jak i w zu¿yciu
-pamiêci przy zachowaniu du¿ej elastyczno¶ci i programowalno¶ci.
+%description -l pl.UTF-8
+esh zostaÅ‚ napisany w pierwszej kolejnoÅ›ci z potrzeby posiadania
+prostej i maÅ‚ej powÅ‚oki uniksowej. Jako taki rÃ³Å¼ni siÄ™ od wszystkich
+innych powÅ‚ok, przyjmujÄ…c skÅ‚adniÄ™ podobnÄ… do Lispa. To pozwala na
+uzyskaÄ‡ wyjÄ…tkowo maÅ‚e rozmiary, w rozmiarach kodu jak i w zuÅ¼yciu
+pamiÄ™ci przy zachowaniu duÅ¼ej elastycznoÅ›ci i programowalnoÅ›ci.
 
 %prep
 %setup -q -n esh
