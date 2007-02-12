@@ -1,5 +1,5 @@
 Summary:	esh, the easy shell
-Summary(pl.UTF-8):   esh - prosta powłoka
+Summary(pl.UTF-8):	esh - prosta powłoka
 Name:		esh
 Version:	0.8.5
 Release:	1
